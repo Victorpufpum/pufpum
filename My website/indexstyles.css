@@ -1,0 +1,22 @@
+body {
+   background-image: url(img/bienvenida1.png);
+   background-color: cornflowerblue;
+
+}
+
+.orb {
+    position: absolute;
+    left: 500px;
+    top: 340px;
+    color: blue;
+    text-align: center;
+    padding: 3%;
+    border-radius: 50%;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.orb:hover {
+    color: darkorange;
+
+}

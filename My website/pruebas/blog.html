@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="blogcss.css">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+      <div class="navbar">
+         <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="myart.html">My art</a></li>
+            <li><a class="active" href="blog.html">Blog and chat</a></li>
+            <li><a href="aboutme.html">About me</a></li>
+        </ul>
+        
+         <div class="dropdown">
+                 <button onclick="myFunction()" class="dropbtn">Filter</button>
+             <div id="myDropdown" class="dropdown-content">
+                 <input type="text" placeholder="what to see.." id="myInput" onkeyup="filterFunction()">
+                 <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                 <button class="btn" onclick="filterSelection('tradicional')"> visual Tradicional mediums</button>
+                 <button class="btn" onclick="filterSelection('digital')"> visual Digital mediums</button>
+                 <button class="btn" onclick="filterSelection('writing')"> Writing</button>
+                 <button class="btn" onclick="filterSelection('music')"> Music</button>
+                 <button class="btn" onclick="filterSelection('characters')"> Characters</button>
+                 <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+                 <button class="btn" onclick="filterSelection('fanart')"> Fanart</button>
+             </div>
+         </div>
+        </div>
+
+
+        <div class="principal">
+        <header>
+            <h1>My blooog</h1>
+        </header>
+        
+            <main>
+                <article>
+                   <h2>Las ultimas series que e visto:</h2>
+                   <p>-dead boy detectives
+                    -the bastard son and the devil himself
+                   </p>
+                </article>
+                <article>
+                   <h2>Cosas que agregar a website</h2>
+                   <p>-
+                   </p>
+                </article>
+                <article>
+                    <!--blog content here-->
+                    <h2>look</h2>
+                    hii, blog content,article
+                </article>
+            </main>
+       
+        <footer>footer</footer>
+        </div>
+    </body>
+</html>
