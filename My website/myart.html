@@ -2,47 +2,396 @@
 <html>
     <head>
        <link rel="stylesheet" href="myartstyles.css">
-       <script src="myart.javascript" defer></script>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <script src="myart.js" defer></script>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <meta charset="UTF-8">
     </head>
     <body>
 
         <div class="navbar">
-         <ul>
-            <li><a href="home.html">home</a></li>
-            <li><a class="active" href="myart.html">My art</a></li>
-            <li><a href="blog.html">Blog and chat</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-        </ul>
+         <div class="topnav" id="myTopnav">
+             <div class="header"><h2>PufPum</h2>
+             <p>By: Tomoto</p></div>
+             <a href="home.html">home</a>
+             <a class="active" href="myart.html">My art</a>
+             <a href="aboutme.html">About me</a>
+             <a href="javascript:void(0);" class="icon" onclick="toggleTopnav()">
+             <i class="fa fa-bars"></i></a>
+         </div>
         
          <div class="dropdown">
-                 <button onclick="myFunction()" class="dropbtn">Filter</button>
+                 <button onclick="openDropdown()" onc¿ class="dropbtn">Filter</button>
              <div id="myDropdown" class="dropdown-content">
-                 <input type="text" placeholder="what to see.." id="myInput" onkeyup="filterFunction()">
                  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                 <button class="btn" onclick="filterSelection('tradicional')"> visual Tradicional mediums</button>
-                 <button class="btn" onclick="filterSelection('digital')"> visual Digital mediums</button>
-                 <button class="btn" onclick="filterSelection('writing')"> Writing</button>
-                 <button class="btn" onclick="filterSelection('music')"> Music</button>
-                 <button class="btn" onclick="filterSelection('characters')"> Characters</button>
+                 <button class="btn" onclick="filterSelection('tradicional')"> Tradicional</button>
+                 <button class="btn" onclick="filterSelection('digital')"> Digital</button>
                  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
                  <button class="btn" onclick="filterSelection('fanart')"> Fanart</button>
+                 <button class="btn" onclick="filterSelection('character')"> Character</button>
+                 <button class="btn" onclick="filterSelection('favorito')"> Favorito</button>
+                 <button class="btn" onclick="filterSelection('poema')"> Poema</button>
              </div>
          </div>
         </div>
-
-        <h1>My art:</h1>
         
+     
         <div class="container">
-            <div class="filterDiv ">
+
+
+
+
+            <div class="filterDiv poema">
+                <p>Todo lo que amo:<br>
+                 Veo atraves de mí ventana, las nubes pasan,<br>
+                 Bailan tan sostificadamente, tontean con sus ondas, giran y gritan y lloran y duermen.<br>
+                 Yo se que solo yo veo eso pero también entiendo que hay algo que me quieren contar,<br>
+                 algo que aprender de ellas, solo que yo no las se escuchar.<br>
+                
+                 A veces me aterra las líneas en madera,<br> 
+                 tanta historia,<br> 
+                 tanto tiempo,<br> 
+                 me va a tragar,<br>
+                 o tal vez sea solo algo pintado en pseudo plástico,<br>
+                 o tal vez solo sea el sol bailando en mis ojos.<br>
+
+                 Te extraño, mí significado<br>
+                 Te extraño, mí amado,<br>
+                 y extraño es saber que te niego conocer.<br>
+                 Te amo,<br>
+                 Porque no te dejo amar me?<br>
+                 Te amo,<br>
+                 Porque no me dejo olvidarte?<br>
+                 Te amo,<br>
+                 y eso es todo. Amor.<br>
+                </p>
+                <p>.8/septiembre/2026</p>
+            </div>
+            <div class="filterDiv poema">
+                <p>Un Poema:<br>
+                Y si trato de gritar, no encuentro mi lugar<br>
+                miro para abajo y solo veo mí camino,<br>
+                me pasó de mambo y veo mí vacío<br>
+                hay tantas cosas por hacer,<br>
+                tantas grietas por llenar<br>
+                No quiero que me lleve a sus susurros sin final.<br>
+                No quiero perderme en un bosque del cual podría salir,<br>
+                levantando mí querido final.</p>
+                <p>.7/septiembre/2026</p>
+            </div>
+
+            ----------
+             --Fin de ese cuarderno-- del ... hasta el 16/6/2026
+            ----------------------------------------------------------------------------------------------------------------
+            
+            <div class="filterDiv tradicional">
+                <a href="gal/"><img src="gal/"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional character">
+                <a href="gal/Image 2026-07-21 (52).jpeg"><img src="gal/Image 2026-07-21 (52).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (49).jpeg"><img src="gal/Image 2026-07-21 (49).jpeg"></a>
+                <a href="gal/Image 2026-07-21 (50).jpeg"><img src="gal/Image 2026-07-21 (50).jpeg"></a>
+                <a href="gal/Image 2026-07-21 (51).jpeg"><img src="gal/Image 2026-07-21 (51).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (43).jpeg"><img src="gal/Image 2026-07-21 (43).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional animals">
+                <a href="gal/Image 2026-07-21 (42).jpeg"><img src="gal/Image 2026-07-21 (42).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional animals">
+                <a href="gal/Image 2026-07-21 (40).jpeg"><img src="gal/Image 2026-07-21 (40).jpeg"></a>
+                <a href="gal/Image 2026-07-21 (41).jpeg"><img src="gal/Image 2026-07-21 (41).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional animals">
+                <a href="gal/Image 2026-07-21 (39).jpeg"><img src="gal/Image 2026-07-21 (39).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (38).jpeg"><img src="gal/Image 2026-07-21 (38).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (37).jpeg"><img src="gal/Image 2026-07-21 (37).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (36).jpeg"><img src="gal/Image 2026-07-21 (36).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional animals">
+                <a href="gal/Image 2026-07-21 (35).jpeg"><img src="gal/Image 2026-07-21 (35).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional animals">
+                <a href="gal/Image 2026-07-21 (34).jpeg"><img src="gal/Image 2026-07-21 (34).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (33).jpeg"><img src="gal/Image 2026-07-21 (33).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (32).jpeg"><img src="gal/Image 2026-07-21 (32).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (31).jpeg"><img src="gal/Image 2026-07-21 (31).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (29).jpeg"><img src="gal/Image 2026-07-21 (29).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (28).jpeg"><img src="gal/Image 2026-07-21 (28).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (44).jpeg"><img src="gal/Image 2026-07-21 (44).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 (10).jpeg"><img src="gal/Image 2026-09-09 (10).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 (8).jpeg"><img src="gal/Image 2026-09-09 (8).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 (6).jpeg"><img src="gal/Image 2026-09-09 (6).jpeg
+                    no, deberia censurar mi escritura"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (3).jpeg"><img src="gal/Image 2026-07-21 (3).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional animals">
+                <a href="gal/Image 2026-07-21 (47).jpeg"><img src="gal/Image 2026-07-21 (47).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional animals">
+                <a href="gal/Image 2026-07-21 (46).jpeg"><img src="gal/Image 2026-07-21 (46).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (45).jpeg"><img src="gal/Image 2026-07-21 (45).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (27).jpeg"><img src="gal/Image 2026-07-21 (27).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (26).jpeg"><img src="gal/Image 2026-07-21 (26).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (25).jpeg"><img src="gal/Image 2026-07-21 (25).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional character">
+                <a href="gal/Image 2026-07-21 (20).jpeg"><img src="gal/Image 2026-07-21 (20).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (19).jpeg"><img src="gal/Image 2026-07-21 (19).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (15).jpeg"><img src="gal/Image 2026-07-21 (15).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (12).jpeg"><img src="gal/Image 2026-07-21 (12).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (11).jpeg"><img src="gal/Image 2026-07-21 (11).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (22).jpeg"><img src="gal/Image 2026-07-21 (22).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (9).jpeg"><img src="gal/Image 2026-07-21 (9).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (21).jpeg"><img src="gal/Image 2026-07-21 (21).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 a14.jpeg"><img src="gal/Image 2026-09-09 a14.jpeg"></a>
+                <a href="gal/Image 2026-09-09 (5).jpeg"><img src="gal/Image 2026-09-09 (5).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 a12.jpeg"><img src="gal/Image 2026-09-09 a12.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional character">
+                <a href="gal/Image 2026-09-09.jpeg"><img src="gal/Image 2026-09-09.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 a11.jpeg"><img src="gal/Image 2026-09-09 a11.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional character">
+                <a href="gal/Image 2026-09-09 a10.jpeg"><img src="gal/Image 2026-09-09 a10.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 a9.jpeg"><img src="gal/Image 2026-09-09 a9.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 a8.jpeg"><img src="gal/Image 2026-09-09 a8.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 a7.jpeg"><img src="gal/Image 2026-09-09 a7.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 a6.jpeg"><img src="gal/Image 2026-09-09 a6.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 a5.jpeg"><img src="gal/Image 2026-09-09 a5.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (10).jpeg"><img src="gal/Image 2026-07-21 (10).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (30).jpeg"><img src="gal/Image 2026-07-21 (30).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 a4.jpeg"><img src="gal/Image 2026-09-09 a4.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 a3.jpeg"><img src="gal/Image 2026-09-09 a3.jpeg"></a>
+                <p>.Censuro eso? Nah, era algo que pensaba en el momento</p>
+            </div>
+            <div class="filterDiv tradicional fanart">
+                <a href="gal/Image 2026-07-21 (48).jpeg"><img src="gal/Image 2026-07-21 (48).jpeg"></a>
+                <p>.Este me enorgullece, me quedaron muy bonitas las palomas.<br>
+                    (y si, se suponia que ese era Grace de project hail mary, despues leei el libro y me gusto más que la peli, muchas cosas que no entendi bien o no tenia mucha explicacion se expandia más pero no de una forma pesada, recomiendo.)</p>
+            </div>
+            <div class="filterDiv tradicional fanart">
+                <a href="gal/Image 2026-09-09 a16.jpeg"><img src="gal/Image 2026-09-09 a16.jpeg"></a>
+                <p>.NPC Man fanart. :) <br>
+                    <br>
+                    Me gusta NPC Man, me da curiosidad si algun día van a devolver la esposa de Greg o porfin darle conciencia en cuanto a su situacion.<br>
+                    Podrian hacer otra peli, la de Baelin me gusto, tenia una vibra muy de tarde/domingo tranquila y me gusta eso, especialmente con las ecenas de naturaleza y baelin aprendiendo a defenderse y el personaje de phoenix, etc jajaja.</p>
+            </div>
+            <div class="filterDiv tradicional character">
+                <a href="gal/Image 2026-09-09 a2.jpeg"><img src="gal/Image 2026-09-09 a2.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional favorito">
+                <a href="gal/Image 2026-09-09 a1.jpeg"><img src="gal/Image 2026-09-09 a1.jpeg"></a>
+                <a href="gal/Image 2026-09-09 at1.jpeg"><img src="gal/Image 2026-09-09 at1.jpeg"></a>
+                <a href="gal/Image 2026-09-09 at2.jpeg"><img src="gal/Image 2026-09-09 at2.jpeg"></a>
+                <p>.Estuve tratando pero no hay forma de que mis dibujos fisicos sean vistos igual en virtual.<br>
+                    Entonces esto realmente no sirve para lo que queria que sirva, no tan bueno como simplemente ir y hojear mis cuadernos viejos,
+                    por lo que, ya no se bien, queria ver estos (en especifico) dibujos todo el tiempo, amo el croshatching que hice y recuerdo cuan bien la pase,
+                    lo veo y lo sigo amando pero, no se aprecia igual de esta forma y ya no se que hacer?
+
+                </p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 a.jpeg"><img src="gal/Image 2026-09-09 a.jpeg"></a>
+                <a href="gal/Image 2026-09-09 a15.jpeg"><img src="gal/Image 2026-09-09 a15.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional character">
+                <a href="gal/Image 2026-09-09 a13.jpeg"><img src="gal/Image 2026-09-09 a13.jpeg"></a>
+                <a href="gal/Image 2026-07-21 (53).jpeg"><img src="gal/Image 2026-07-21 (53).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-09-09 (1).jpeg"><img src="gal/Image 2026-09-09 (1).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (18).jpeg"><img src="gal/Image 2026-07-21 (18).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional favorito">
+                <a href="gal/gal2/Image 2026-07-21 (17).jpeg"><img src="gal/Image 2026-07-21 (17).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (16).jpeg"><img src="gal/Image 2026-07-21 (16).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (13).jpeg"><img src="gal/Image 2026-07-21 (13).jpeg"></a>
+                <p>.</p>
+            </div>
+             <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (8).jpeg"><img src="gal/Image 2026-07-21 (8).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (7).jpeg"><img src="gal/Image 2026-07-21 (7).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional animals">
+                <a href="gal/Image 2026-07-21 (6).jpeg"><img src="gal/Image 2026-07-21 (6).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional animals">
+                <a href="gal/Image 2026-07-21 (4).jpeg"><img src="gal/Image 2026-07-21 (4).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional character">
+                <a href="gal/Image 2026-07-21 (2).jpeg"><img src="gal/Image 2026-07-21 (2).jpeg"></a>
+                <p>.dibujo estos personajes bastante, no e definido un diseño para ellas? pero me gustan (la de lentes y mangas largaaas) o más bien solo se quedan en mi mente sin pagar alquiler jaja</p>
+            </div>
+            <div class="filterDiv tradicional character">
+                <a href="gal/Image 2026-07-21 (1).jpeg"><img src="gal/Image 2026-07-21 (1).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-07-21 (23).jpeg"><img src="gal/Image 2026-07-21 (23).jpeg"></a>
+                <p>.</p>
+            </div>
+
+            <div class="filterDiv digital favorito">
+                <a href="gal/invocacion.jpg"><img src="gal/invocacion.jpg"></a>
+                <p>.Invocacion!</p>
+            </div>
+            <div class="filterDiv digital">
+                <a href="gal/draw22.4.jpg"><img src="gal/draw22.4.jpg"></a>
+                <p>.A study</p>
+            </div>
+            <div class="filterDiv digital">
                 <a href="gal/draw22.3.jpg"><img src="gal/draw22.3.jpg"></a>
                 <p>.</p>
             </div>
-            <div class="filterDiv ">
+            <div class="filterDiv digital favorito">
                 <a href="gal/draw22.2.jpg"><img src="gal/draw22.2.jpg"></a>
                 <p>.</p>
             </div>
-            <div class="filterDiv ">
+            <div class="filterDiv digital">
                 <a href="gal/draw22.jpg"><img src="gal/draw22.jpg"></a>
                 <p>.</p>
             </div>
@@ -58,6 +407,35 @@
                 <a href="gal/enojo1.jpg"><img src="gal/enojo1.jpg"></a>
                 <p>.27/4/2026</p>
             </div>
+
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-08-26 3.35.2.jpeg"><img src="gal/Image 2026-08-26 3.35.2.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-08-26 at 3.35(5).jpeg"><img src="gal/Image 2026-08-26 at 3.35(5).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-08-26 3.35(4).jpeg"><img src="gal/Image 2026-08-26 3.35(4).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-08-26 3.35.jpeg"><img src="gal/Image 2026-08-26 3.35.jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-08-26 at 3.35(2).jpeg"><img src="gal/Image 2026-08-26 at 3.35(2).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Image 2026-08-26 at 3.35 (1).jpeg"><img src="gal/Image 2026-08-26 at 3.35 (1).jpeg"></a>
+                <p>.</p>
+            </div>
+            <div class="filterDiv tradicional">
+                <a href="gal/Sin título.jpg"><img src="gal/Sin título.jpg"></a>
+                <p>.</p>
+            </div>
             <div class="filterDiv tradicional">
                 <a href="gal/scketch4.5.jpg"><img src="gal/scketch4.5.jpg"></a>
                 <p>.sassy<br>
@@ -67,7 +445,7 @@
                 <a href="gal/scketch4.jpg"><img src="gal/scketch4.jpg"></a>
                 <p>.18/4/2026</p>
             </div>
-            <div class="filterDiv tradicional">
+            <div class="filterDiv tradicional favorito">
                 <a href="gal/scketch3.jpg"><img src="gal/scketch3.jpg"></a>
                 <p>.</p>
             </div>
@@ -96,8 +474,9 @@
                 <p>.</p>
             </div>
             
+            
             <div class="filterDiv tradicional">
-                <a href="gal/casasueño.jpg"><img src="gal/casasueño.jpg"></a>
+                <a href="gal/casasueño2.jpg"><img src="gal/casasueño2.jpg"></a>
                 <p>.i had a dream with a house similar to this, my dreams are weird, this that i created inspired by that, feels lonely to me.<br>i would like to visit my dreams more and actually finishing this.<br> i wonder if i coud expres that feeling that they gave me and that other feeling that i have once i wake up.</p>
                  <!-- i guest this woud go into a writing part, i donÂ´t know how i am gonna organice that, i write plenty, a lot of the time it just doesnÂ´t actually make sence in a factual mater, i gues thatÂ´s what writing is for but i still have to face that wall in my mind, that tells me itÂ´s weird and wrong.<br> my dreams are weird, but they are not lonely, i always feel their wisper, when i wake up in the other hand, revisiting this feels like going to a set that is ready for take down, with no actor and no lights. -->
             </div>
@@ -105,9 +484,9 @@
                 <a href="gal/elprimer.jpg"><img src="gal/elprimer.jpg"></a>
                 <p>.1/4/2026</p>
             </div>
-            <div class="filterDiv tradicional">
+            <div class="filterDiv digital">
                 <a href="gal/cero.jpg"><img src="gal/cero.jpg"></a>
-                <p>.1/4/2026</p>
+                <p>.</p>
             </div>
 
             <div class="filterDiv digital">
@@ -120,6 +499,17 @@
             </div>
 
         </div>
+
+        <script>
+         function toggleTopnav() {
+              var x = document.getElementById("myTopnav");
+               if (x.className === "topnav") {
+               x.className += " responsive";
+               } else {
+              x.className = "topnav";
+               }
+           }
+        </script>
 
     </body>
 </html>
