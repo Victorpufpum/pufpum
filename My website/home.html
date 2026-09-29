@@ -1,40 +1,59 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>My Website</title>
         <link rel="stylesheet" href="./homestyles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
     </head>
     <body>
-        <ul>
-            <li><a class="active" href="home.html">home</a></li>
-            <li><a href="myart.html">My art</a></li>
-            <li><a href="aboutme.html">About me</a></li>
-        </ul>
-
-        <div class="principal">
-        <h1>Welcome to my digital picnic</h1>
-        <p>I´m Víctor, <br>
-            (or in some places PufPum) i´ts a pleasure :)</p>
-        <p>This is a living thing that i come back to change time to time, <br>
-            i hope i can make this into a garden or a home that i am proud to call my own, <br>
-         i invite you to be my guest in this place of mine but whenever you are, you can do whatever you want, time is all yours.</p>
-
-         <p> When i have more time this will be more sumarise but for the time been this is what i let to my ghost to say. </p>
-        Estoy hiciendo esto:D! <br>
-        <strong class="custom-text-01">OMG</strong>!<br>
-        <span class="custom-text-02">grafic design is my passion</span><br>
-       
-
-        <img src="img/pexels-nejc-kosir.jpg" alt="arbol, si no funciona esto apararece">
-        <a target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
-
-       <a href="https://youtu.be/QmpXxMto50k?si=4Htjlripo7c8Uo_H" class="custom-text-01">miau</a>
-       <iframe src="news.html" frameborder="0"></iframe>
+        <div class="topnav" id="myTopnav">
+             <div class="header"><h2>PufPum</h2>
+             <p>By: Tomoto</p></div>
+             <a class="active" href="home.html">home</a>
+             <a href="myart.html">My art</a>
+             <a href="aboutme.html">About me</a>
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i></a>
         </div>
-        <footer>Esta pagina esta dedicada a mis padres asombrosos:<br>
+    
+        <div class="principal">
+         <h2>Thanks for visiting :D</h2>
+        
+          <p> This is a living notebook that i come back to change time to time, <br>
+             i invite you to be my guest in this place of mine but whenever you are, you can do whatever you want, time is all yours.
+          </p>
+
+           <iframe src="news.html" frameborder="0"></iframe><br>
+        <div class="fun">
+           Estoy hiciendo esto:D! <br>
+         <strong class="custom-text-01">OMG</strong>!<br>
+         <span class="custom-text-02">grafic design is my passion</span><br>
+         <p>Good tutorial to start your page at (guides):</p>
+          <a class="badge" target="_blank" href="https://melonking.net"><img alt="Visit Melonking.Net!" src="https://melonking.net/images/badges/MELON-BADGE-2.GIF" style="image-rendering: pixelated"></a>
+        </div>
+       
+        <a href="https://youtu.be/QmpXxMto50k?si=4Htjlripo7c8Uo_H" class="custom-text-01">miau</a>
+        
+        <img class="bosque" src="img/pexels-nejc-kosir.jpg" alt="bosque, si no funciona esto apararece, fotografo: Nejc Košir">
+       
+        </div>
+
+        <footer><p> Esta pagina esta dedicada a mis padres asombrosos:<br>
              Marlene, Juan, son lo mejor que me a pasado y de enserio gracias por haberme ayudado y seguir ayudando (y simplemente existir más que nada) a ser mejor todos los días,<br>
-             con amor, Víctor, ustedes hacen el mundo mejor solo estando en el. 
+             con amor, Víctor, ustedes hacen el mundo mejor solo estando en el. </p>
         </footer>
+
+        <script>
+         function myFunction() {
+              var x = document.getElementById("myTopnav");
+               if (x.className === "topnav") {
+               x.className += " responsive";
+               } else {
+              x.className = "topnav";
+               }
+           }
+        </script>
+
     </body>
 </html>
