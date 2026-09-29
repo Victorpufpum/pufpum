@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="aboutmecss.css">
+        <link rel="stylesheet" href="aboutme.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
     </head>
     <body>
-        <ul>
-            <li><a href="home.html">home</a></li>
-            <li><a href="myart.html">My art</a></li>
-            <li><a href="blog.html">Blog and chat</a></li>
-            <li><a class="active" href="aboutme.html">About me</a></li>
-        </ul>
+        <div class="topnav" id="myTopnav">
+             <div class="header"><h2>PufPum</h2>
+             <p>By: Tomoto</p></div>
+             <a href="home.html">home</a>
+             <a href="myart.html">My art</a>
+             <a class="active" href="aboutme.html">About me</a>
+             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i></a>
+        </div>
 
-        <div >
+        <div class="principal">
         <p>
-            <pre>
-            Hi mi name is Víctor,
-            here are some things about me:
-            i am a 18 year old trans man,
-            i love mi parents 
-            i am <a href="https://youtu.be/5bhdARadb_o?si=nzkXU1o4_YYArFwf">Argentino</a>
-            <a href="https://www.youtube.com/watch?v=bV7qFNJrut4">(Aurora english sub)</a>
-            
-            how i got into doing this:
+            Hi mi name is Tomoto,<br>
+            here are some things about me:<br>
+            I am a 18 year old,<br>
+            I love my parents <br>
+            I am <a href="https://youtu.be/5bhdARadb_o?si=nzkXU1o4_YYArFwf">Argentino</a><br>
+            <a href="https://www.youtube.com/watch?v=bV7qFNJrut4">(Aurora english sub)</a><br>
+        </p>
+        <p>
+            how i got into doing this:<br>
             Funny thing is my dad is a programer and he wanned me to get into programing but i didn´t,
              a while after, i find the indie web (with cloudhiker, i have heard that peaple still do this kind of thing but i have to look for it) 
               and i was like, i want to do that, (thanks to melonking for the indie revival guide) so from there i kind of knew what i wanted,
@@ -38,16 +43,13 @@
             -any craft thing usually interest me, i have crochet and knit.
             -pretty regularly i go to youtube and watch animations, people are really amazing, some of them stay in my head and i love feeling what they created.
             -idk.
-            </pre>
-        </p>
-        <p><pre> 
-            socialmedia:
-            -instagram: <a href="https://www.instagram.com/victor.pufpum/?hl=es">victor.pufpum</a>
-            -
-            </pre>
         </p>
         <p>
-            <pre>
+            socialmedia:<br>
+            -instagram: <a href="https://www.instagram.com/tomoto.pufpum/">Tomoto.PufPum</a><br>
+            -
+        </p>
+        <p>
             edit 14/5/2026: my dad and mom read this (i know you are there -_-... Hiii!)
                 and he said that i dedicated this to him because i mention him,
                 i said no but now yes, i´m making it a dedication >:) 
@@ -86,7 +88,6 @@
                 (i´m just realizing how much is 500 people and i kinda wanna play dumb but i don´t wanna deny that humanity, i´m going to las ramas)
                 pd 3 omg i can´t shut up: love to my brother too, i love youuu.
                 --
-            </pre>
         </p>
         <p>
             <pre>
@@ -95,5 +96,17 @@
             </pre>
         </p>
     </div>
+
+    <script>
+         function myFunction() {
+              var x = document.getElementById("myTopnav");
+               if (x.className === "topnav") {
+               x.className += " responsive";
+               } else {
+              x.className = "topnav";
+               }
+           }
+        </script>
+
     </body>
 </html>
